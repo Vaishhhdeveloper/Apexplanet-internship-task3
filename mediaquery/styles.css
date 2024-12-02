@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #3bcfa2;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333bd0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #575757;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .content {
+    flex: 2;
+    margin-right: 20px;
+  }
+  
+  aside {
+    flex: 1;
+  }
+  
+  
+  /* Responsive Design with Media Queries */
+  
+  /* For Tablets (768px and smaller) */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    main {
+      flex-direction: column;
+    }
+  
+    .content {
+      margin-right: 0;
+    }
+  
+    aside {
+      margin-top: 20px;
+    }
+  }
+  
+  /* For Mobile Phones (480px and smaller) */
+  @media (max-width: 480px) {
+    header {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  }
+  
